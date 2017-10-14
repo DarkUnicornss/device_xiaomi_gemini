@@ -26,7 +26,7 @@ import android.util.Log;
 
 import java.io.File;
 
-import com.android.internal.util.cm.FileUtils;
+import com.cyanogenmod.settings.device.utils.FileUtils;
 
 public class Startup extends BroadcastReceiver {
 
