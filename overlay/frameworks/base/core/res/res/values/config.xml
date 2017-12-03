@@ -548,4 +548,5 @@
 
     <!-- True if camera app should be pinned via Pinner Service -->
     <bool name="config_pinnerCameraApp">true</bool>
+    <bool name="config_alt_ambient_display">true</bool>
 </resources>
