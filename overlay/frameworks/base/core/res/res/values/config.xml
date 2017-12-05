@@ -463,7 +463,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-<!--     <integer name="config_deviceHardwareKeys">83</integer> -->
+     <!--integer name="config_deviceHardwareKeys">83</integer-->
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -504,14 +504,14 @@
 <!--     <integer name="config_longPressOnAppSwitchBehavior">1</integer> -->
 
     <!-- Paths to the libraries that contain device specific key handlers -->
-    <!--string-array name="config_deviceKeyHandlerLibs" translatable="false">
+    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
         <item>/system/priv-app/ConfigPanel/ConfigPanel.apk</item>
-    </string-array-->
+    </string-array>
 
     <!-- Names of the key handler classes -->
-    <!--string-array name="config_deviceKeyHandlerClasses" translatable="false">
+    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
         <item>com.cyanogenmod.settings.device.KeyHandler</item>
-    </string-array-->
+    </string-array>
 
     <!-- Operating volatage for bluetooth controller. 0 by default-->
     <integer name="config_bluetooth_operating_voltage_mv">3300</integer>
