@@ -89,7 +89,7 @@ AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
-USE_CUSTOM_AUDIO_POLICY := 1
+USE_CUSTOM_AUDIO_POLICY := 0
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
@@ -197,11 +197,11 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 # RIL
 BOARD_RIL_CLASS := ../../../$(DEVICE_PATH)/ril
 PROTOBUF_SUPPORTED := true
-# TARGET_RIL_VARIANT := caf
+TARGET_RIL_VARIANT := caf
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+#include device/qcom/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_gemini

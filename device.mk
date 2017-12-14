@@ -152,7 +152,7 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
 # ConfigPanel
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     ConfigPanel \
 
 # Default permissions
@@ -169,7 +169,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/calib.cfg:system/etc/calib.cfg
 
 # Doze mode
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     XiaomiDoze
 
 # For config.fs
@@ -250,12 +250,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
-
-# OTA Updates
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ota.romname=AOSP-GEMINI-OREO \
-    ro.ota.version=$(shell date -u +%Y%m%d) \
-    ro.ota.manifest=https://romhut.com/roms/aosp-gemini-oreo/ota.xml
 
 # QMI
 PRODUCT_PACKAGES += \
